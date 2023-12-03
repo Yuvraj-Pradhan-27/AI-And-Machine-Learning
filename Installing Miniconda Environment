@@ -1,0 +1,579 @@
+Last login: Sun Dec  3 13:16:46 on console
+(base) yuvrajpradhan@Yuvrajs-MacBook-Air ~ % cd desktop
+(base) yuvrajpradhan@Yuvrajs-MacBook-Air desktop % mkdir sample_project
+(base) yuvrajpradhan@Yuvrajs-MacBook-Air desktop % ls
+Screenshot 2023-11-15 at 8.29.34 PM.png
+Screenshot 2023-12-01 at 12.38.57 PM.png
+sample_project
+untitled folder
+(base) yuvrajpradhan@Yuvrajs-MacBook-Air desktop % cd sample_project 
+(base) yuvrajpradhan@Yuvrajs-MacBook-Air sample_project % ls
+(base) yuvrajpradhan@Yuvrajs-MacBook-Air sample_project % conda create --prefix ./env pandas numpy matplotlib scikit-learn
+Channels:
+ - defaults
+Platform: osx-arm64
+Collecting package metadata (repodata.json): done
+Solving environment: done
+
+## Package Plan ##
+
+  environment location: /Users/yuvrajpradhan/Desktop/sample_project/env
+
+  added / updated specs:
+    - matplotlib
+    - numpy
+    - pandas
+    - scikit-learn
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    blas-1.0                   |         openblas          10 KB
+    bottleneck-1.3.5           |  py312ha86b861_0         115 KB
+    brotli-1.0.9               |       h1a28f6b_7          18 KB
+    brotli-bin-1.0.9           |       h1a28f6b_7          17 KB
+    contourpy-1.0.5            |  py312h48ca7d4_0         200 KB
+    cycler-0.11.0              |     pyhd3eb1b0_0          12 KB
+    expat-2.5.0                |       h313beb8_0         144 KB
+    fonttools-4.25.0           |     pyhd3eb1b0_0         632 KB
+    freetype-2.12.1            |       h1192e45_0         570 KB
+    giflib-5.2.1               |       h80987f9_3          78 KB
+    joblib-1.2.0               |  py312hca03da5_0         485 KB
+    jpeg-9e                    |       h80987f9_1         248 KB
+    kiwisolver-1.4.4           |  py312h313beb8_0          54 KB
+    lcms2-2.12                 |       hba8e193_0         273 KB
+    lerc-3.0                   |       hc377ac9_0         115 KB
+    libbrotlicommon-1.0.9      |       h1a28f6b_7          70 KB
+    libbrotlidec-1.0.9         |       h1a28f6b_7          27 KB
+    libbrotlienc-1.0.9         |       h1a28f6b_7         256 KB
+    libdeflate-1.17            |       h80987f9_1          55 KB
+    libgfortran-5.0.0          |11_3_0_hca03da5_28         142 KB
+    libgfortran5-11.3.0        |      h009349e_28         1.0 MB
+    libopenblas-0.3.21         |       h269037a_0         3.3 MB
+    libpng-1.6.39              |       h80987f9_0         283 KB
+    libtiff-4.5.1              |       h313beb8_0         496 KB
+    libwebp-1.3.2              |       ha3663a8_0          86 KB
+    libwebp-base-1.3.2         |       h80987f9_0         297 KB
+    llvm-openmp-14.0.6         |       hc6e5704_0         253 KB
+    matplotlib-3.8.0           |  py312hca03da5_0           8 KB
+    matplotlib-base-3.8.0      |  py312hd77ebd4_0         7.0 MB
+    munkres-1.1.4              |             py_0          13 KB
+    numexpr-2.8.7              |  py312h0f3ea24_0         134 KB
+    numpy-1.26.2               |  py312h7f4fdc5_0          11 KB
+    numpy-base-1.26.2          |  py312he047099_0         6.3 MB
+    openjpeg-2.3.0             |       h7a6adac_2         274 KB
+    packaging-23.1             |  py312hca03da5_0          91 KB
+    pandas-2.1.1               |  py312hd77ebd4_0        12.6 MB
+    pillow-10.0.1              |  py312h3b245a6_0         754 KB
+    pip-23.3                   |  py312hca03da5_0         3.3 MB
+    pyparsing-3.0.9            |  py312hca03da5_0         197 KB
+    python-3.12.0              |       h99e199e_0        14.0 MB
+    python-dateutil-2.8.2      |     pyhd3eb1b0_0         233 KB
+    python-tzdata-2023.3       |     pyhd3eb1b0_0         140 KB
+    pytz-2023.3.post1          |  py312hca03da5_0         200 KB
+    scikit-learn-1.3.0         |  py312hd77ebd4_2         7.9 MB
+    scipy-1.11.3               |  py312hfa28a95_0        19.1 MB
+    setuptools-68.0.0          |  py312hca03da5_0         1.2 MB
+    six-1.16.0                 |     pyhd3eb1b0_1          18 KB
+    threadpoolctl-2.2.0        |     pyh0d69192_0          16 KB
+    tornado-6.3.3              |  py312h80987f9_0         788 KB
+    wheel-0.41.2               |  py312hca03da5_0         133 KB
+    ------------------------------------------------------------
+                                           Total:        83.4 MB
+
+The following NEW packages will be INSTALLED:
+
+  blas               pkgs/main/osx-arm64::blas-1.0-openblas 
+  bottleneck         pkgs/main/osx-arm64::bottleneck-1.3.5-py312ha86b861_0 
+  brotli             pkgs/main/osx-arm64::brotli-1.0.9-h1a28f6b_7 
+  brotli-bin         pkgs/main/osx-arm64::brotli-bin-1.0.9-h1a28f6b_7 
+  bzip2              pkgs/main/osx-arm64::bzip2-1.0.8-h620ffc9_4 
+  ca-certificates    pkgs/main/osx-arm64::ca-certificates-2023.08.22-hca03da5_0 
+  contourpy          pkgs/main/osx-arm64::contourpy-1.0.5-py312h48ca7d4_0 
+  cycler             pkgs/main/noarch::cycler-0.11.0-pyhd3eb1b0_0 
+  expat              pkgs/main/osx-arm64::expat-2.5.0-h313beb8_0 
+  fonttools          pkgs/main/noarch::fonttools-4.25.0-pyhd3eb1b0_0 
+  freetype           pkgs/main/osx-arm64::freetype-2.12.1-h1192e45_0 
+  giflib             pkgs/main/osx-arm64::giflib-5.2.1-h80987f9_3 
+  joblib             pkgs/main/osx-arm64::joblib-1.2.0-py312hca03da5_0 
+  jpeg               pkgs/main/osx-arm64::jpeg-9e-h80987f9_1 
+  kiwisolver         pkgs/main/osx-arm64::kiwisolver-1.4.4-py312h313beb8_0 
+  lcms2              pkgs/main/osx-arm64::lcms2-2.12-hba8e193_0 
+  lerc               pkgs/main/osx-arm64::lerc-3.0-hc377ac9_0 
+  libbrotlicommon    pkgs/main/osx-arm64::libbrotlicommon-1.0.9-h1a28f6b_7 
+  libbrotlidec       pkgs/main/osx-arm64::libbrotlidec-1.0.9-h1a28f6b_7 
+  libbrotlienc       pkgs/main/osx-arm64::libbrotlienc-1.0.9-h1a28f6b_7 
+  libcxx             pkgs/main/osx-arm64::libcxx-14.0.6-h848a8c0_0 
+  libdeflate         pkgs/main/osx-arm64::libdeflate-1.17-h80987f9_1 
+  libffi             pkgs/main/osx-arm64::libffi-3.4.4-hca03da5_0 
+  libgfortran        pkgs/main/osx-arm64::libgfortran-5.0.0-11_3_0_hca03da5_28 
+  libgfortran5       pkgs/main/osx-arm64::libgfortran5-11.3.0-h009349e_28 
+  libopenblas        pkgs/main/osx-arm64::libopenblas-0.3.21-h269037a_0 
+  libpng             pkgs/main/osx-arm64::libpng-1.6.39-h80987f9_0 
+  libtiff            pkgs/main/osx-arm64::libtiff-4.5.1-h313beb8_0 
+  libwebp            pkgs/main/osx-arm64::libwebp-1.3.2-ha3663a8_0 
+  libwebp-base       pkgs/main/osx-arm64::libwebp-base-1.3.2-h80987f9_0 
+  llvm-openmp        pkgs/main/osx-arm64::llvm-openmp-14.0.6-hc6e5704_0 
+  lz4-c              pkgs/main/osx-arm64::lz4-c-1.9.4-h313beb8_0 
+  matplotlib         pkgs/main/osx-arm64::matplotlib-3.8.0-py312hca03da5_0 
+  matplotlib-base    pkgs/main/osx-arm64::matplotlib-base-3.8.0-py312hd77ebd4_0 
+  munkres            pkgs/main/noarch::munkres-1.1.4-py_0 
+  ncurses            pkgs/main/osx-arm64::ncurses-6.4-h313beb8_0 
+  numexpr            pkgs/main/osx-arm64::numexpr-2.8.7-py312h0f3ea24_0 
+  numpy              pkgs/main/osx-arm64::numpy-1.26.2-py312h7f4fdc5_0 
+  numpy-base         pkgs/main/osx-arm64::numpy-base-1.26.2-py312he047099_0 
+  openjpeg           pkgs/main/osx-arm64::openjpeg-2.3.0-h7a6adac_2 
+  openssl            pkgs/main/osx-arm64::openssl-3.0.12-h1a28f6b_0 
+  packaging          pkgs/main/osx-arm64::packaging-23.1-py312hca03da5_0 
+  pandas             pkgs/main/osx-arm64::pandas-2.1.1-py312hd77ebd4_0 
+  pillow             pkgs/main/osx-arm64::pillow-10.0.1-py312h3b245a6_0 
+  pip                pkgs/main/osx-arm64::pip-23.3-py312hca03da5_0 
+  pyparsing          pkgs/main/osx-arm64::pyparsing-3.0.9-py312hca03da5_0 
+  python             pkgs/main/osx-arm64::python-3.12.0-h99e199e_0 
+  python-dateutil    pkgs/main/noarch::python-dateutil-2.8.2-pyhd3eb1b0_0 
+  python-tzdata      pkgs/main/noarch::python-tzdata-2023.3-pyhd3eb1b0_0 
+  pytz               pkgs/main/osx-arm64::pytz-2023.3.post1-py312hca03da5_0 
+  readline           pkgs/main/osx-arm64::readline-8.2-h1a28f6b_0 
+  scikit-learn       pkgs/main/osx-arm64::scikit-learn-1.3.0-py312hd77ebd4_2 
+  scipy              pkgs/main/osx-arm64::scipy-1.11.3-py312hfa28a95_0 
+  setuptools         pkgs/main/osx-arm64::setuptools-68.0.0-py312hca03da5_0 
+  six                pkgs/main/noarch::six-1.16.0-pyhd3eb1b0_1 
+  sqlite             pkgs/main/osx-arm64::sqlite-3.41.2-h80987f9_0 
+  threadpoolctl      pkgs/main/noarch::threadpoolctl-2.2.0-pyh0d69192_0 
+  tk                 pkgs/main/osx-arm64::tk-8.6.12-hb8d0fd4_0 
+  tornado            pkgs/main/osx-arm64::tornado-6.3.3-py312h80987f9_0 
+  tzdata             pkgs/main/noarch::tzdata-2023c-h04d1e81_0 
+  wheel              pkgs/main/osx-arm64::wheel-0.41.2-py312hca03da5_0 
+  xz                 pkgs/main/osx-arm64::xz-5.4.2-h80987f9_0 
+  zlib               pkgs/main/osx-arm64::zlib-1.2.13-h5a0b063_0 
+  zstd               pkgs/main/osx-arm64::zstd-1.5.5-hd90d995_0 
+
+
+Proceed ([y]/n)? ^[[C
+Invalid choice: 
+Proceed ([y]/n)? ^[[?1;2cy
+Invalid choice: y
+Proceed ([y]/n)? [y]
+Invalid choice: [y]
+Proceed ([y]/n)? y
+
+
+Downloading and Extracting Packages:
+                                                                                                                                         
+Preparing transaction: done                                                                                                              
+Verifying transaction: done                                                                                                              
+Executing transaction: done                                                                                                              
+#                                                                                                                                        
+# To activate this environment, use                                                                                                      
+#                                                                                                                                        
+#     $ conda activate /Users/yuvrajpradhan/Desktop/sample_project/env                                                                   
+#                                                                                                                                        
+# To deactivate an active environment, use                                                                                               
+#                                                                                                                                        
+#     $ conda deactivate                                                                                                                 
+                                                                                                                                         
+(base) yuvrajpradhan@Yuvrajs-MacBook-Air sample_project % conda active /Users/yuvrajpradhan/Desktop/sample_project/env         
+usage: conda [-h] [-v] [--no-plugins] [-V] COMMAND ...
+conda: error: argument COMMAND: invalid choice: 'active' (choose from 'clean', 'compare', 'config', 'create', 'info', 'init', 'install', 'list', 'notices', 'package', 'remove', 'uninstall', 'rename', 'run', 'search', 'update', 'upgrade', 'content-trust', 'doctor', 'repoquery', 'env')
+(base) yuvrajpradhan@Yuvrajs-MacBook-Air sample_project % conda env list
+# conda environments:
+#
+                         /Users/yuvrajpradhan/Desktop/sample_project/env
+base                  *  /Users/yuvrajpradhan/miniconda3
+
+(base) yuvrajpradhan@Yuvrajs-MacBook-Air sample_project % jupyter notebook
+zsh: command not found: jupyter
+(base) yuvrajpradhan@Yuvrajs-MacBook-Air sample_project % conda install jupyter 
+Channels:
+ - defaults
+Platform: osx-arm64
+Collecting package metadata (repodata.json): done
+Solving environment: done
+
+## Package Plan ##
+
+  environment location: /Users/yuvrajpradhan/miniconda3
+
+  added / updated specs:
+    - jupyter
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    anyio-3.5.0                |  py311hca03da5_0         212 KB
+    appnope-0.1.2              |py311hca03da5_1001          12 KB
+    argon2-cffi-21.3.0         |     pyhd3eb1b0_0          15 KB
+    argon2-cffi-bindings-21.2.0|  py311h80987f9_0          31 KB
+    asttokens-2.0.5            |     pyhd3eb1b0_0          20 KB
+    async-lru-2.0.4            |  py311hca03da5_0          22 KB
+    attrs-23.1.0               |  py311hca03da5_0         163 KB
+    babel-2.11.0               |  py311hca03da5_0         6.1 MB
+    backcall-0.2.0             |     pyhd3eb1b0_0          13 KB
+    beautifulsoup4-4.12.2      |  py311hca03da5_0         275 KB
+    bleach-4.1.0               |     pyhd3eb1b0_0         123 KB
+    certifi-2023.11.17         |  py311hca03da5_0         160 KB
+    comm-0.1.2                 |  py311hca03da5_0          16 KB
+    cyrus-sasl-2.1.28          |       h9131b1a_1         223 KB
+    debugpy-1.6.7              |  py311h313beb8_0         2.4 MB
+    decorator-5.1.1            |     pyhd3eb1b0_0          12 KB
+    defusedxml-0.7.1           |     pyhd3eb1b0_0          23 KB
+    executing-0.8.3            |     pyhd3eb1b0_0          18 KB
+    gettext-0.21.0             |       h13f89a0_1         3.1 MB
+    glib-2.69.1                |       h514c7bf_2         3.0 MB
+    gst-plugins-base-1.14.1    |       h313beb8_1         1.7 MB
+    gstreamer-1.14.1           |       h80987f9_1         1.7 MB
+    ipykernel-6.25.0           |  py311hb6e6a13_0         309 KB
+    ipython-8.15.0             |  py311hca03da5_0         1.4 MB
+    ipywidgets-8.0.4           |  py311hca03da5_0         255 KB
+    jedi-0.18.1                |  py311hca03da5_1         1.1 MB
+    jinja2-3.1.2               |  py311hca03da5_0         290 KB
+    json5-0.9.6                |     pyhd3eb1b0_0          21 KB
+    jsonschema-4.19.2          |  py311hca03da5_0         195 KB
+    jsonschema-specifications-2023.7.1|  py311hca03da5_0          17 KB
+    jupyter-1.0.0              |  py311hca03da5_8           8 KB
+    jupyter-lsp-2.2.0          |  py311hca03da5_0         108 KB
+    jupyter_client-8.6.0       |  py311hca03da5_0         235 KB
+    jupyter_console-6.6.3      |  py311hca03da5_0          58 KB
+    jupyter_core-5.5.0         |  py311hca03da5_0          92 KB
+    jupyter_events-0.8.0       |  py311hca03da5_0          43 KB
+    jupyter_server-2.10.0      |  py311hca03da5_0         587 KB
+    jupyter_server_terminals-0.4.4|  py311hca03da5_1          28 KB
+    jupyterlab-4.0.8           |  py311hca03da5_0         4.7 MB
+    jupyterlab_pygments-0.1.2  |             py_0           8 KB
+    jupyterlab_server-2.25.1   |  py311hca03da5_0         112 KB
+    jupyterlab_widgets-3.0.9   |  py311hca03da5_0         196 KB
+    libclang-14.0.6            |default_h1b80db6_1         138 KB
+    libclang13-14.0.6          |default_h24352ff_1         6.7 MB
+    libllvm14-14.0.6           |       h7ec7a93_3        22.8 MB
+    libpq-12.15                |       h02f6b3c_1         2.4 MB
+    libsodium-1.0.18           |       h1a28f6b_0         220 KB
+    markupsafe-2.1.1           |  py311h80987f9_0          25 KB
+    matplotlib-inline-0.1.6    |  py311hca03da5_0          20 KB
+    mistune-2.0.4              |  py311hca03da5_0         108 KB
+    mysql-5.7.24               |       ha71a6ea_2        57.5 MB
+    nbclient-0.8.0             |  py311hca03da5_0         120 KB
+    nbconvert-7.10.0           |  py311hca03da5_0         517 KB
+    nbformat-5.9.2             |  py311hca03da5_0         159 KB
+    nest-asyncio-1.5.6         |  py311hca03da5_0          17 KB
+    notebook-7.0.6             |  py311hca03da5_0         3.3 MB
+    notebook-shim-0.2.3        |  py311hca03da5_0          27 KB
+    overrides-7.4.0            |  py311hca03da5_0          38 KB
+    pandocfilters-1.5.0        |     pyhd3eb1b0_0          11 KB
+    parso-0.8.3                |     pyhd3eb1b0_0          70 KB
+    pcre-8.45                  |       hc377ac9_0         185 KB
+    pexpect-4.8.0              |     pyhd3eb1b0_3          53 KB
+    pickleshare-0.7.5          |  pyhd3eb1b0_1003          13 KB
+    platformdirs-3.10.0        |  py311hca03da5_0          39 KB
+    ply-3.11                   |  py311hca03da5_0         111 KB
+    prometheus_client-0.14.1   |  py311hca03da5_0         123 KB
+    prompt-toolkit-3.0.36      |  py311hca03da5_0         705 KB
+    prompt_toolkit-3.0.36      |       hd3eb1b0_0           5 KB
+    psutil-5.9.0               |  py311h80987f9_0         473 KB
+    ptyprocess-0.7.0           |     pyhd3eb1b0_2          17 KB
+    pure_eval-0.2.2            |     pyhd3eb1b0_0          14 KB
+    pygments-2.15.1            |  py311hca03da5_1         2.0 MB
+    pyqt-5.15.10               |  py311h313beb8_0         4.3 MB
+    pyqt5-sip-12.13.0          |  py311h80987f9_0          82 KB
+    python-fastjsonschema-2.16.2|  py311hca03da5_0         247 KB
+    python-json-logger-2.0.7   |  py311hca03da5_0          19 KB
+    pytz-2023.3.post1          |  py311hca03da5_0         224 KB
+    pyyaml-6.0.1               |  py311h80987f9_0         197 KB
+    pyzmq-25.1.0               |  py311h313beb8_0         512 KB
+    qt-main-5.15.2             |      h0917680_10        38.5 MB
+    qtconsole-5.5.0            |  py311hca03da5_0         253 KB
+    qtpy-2.4.1                 |  py311hca03da5_0         132 KB
+    referencing-0.30.2         |  py311hca03da5_0          80 KB
+    rfc3339-validator-0.1.4    |  py311hca03da5_0          11 KB
+    rfc3986-validator-0.1.1    |  py311hca03da5_0          11 KB
+    rpds-py-0.10.6             |  py311hf0e4da2_0         312 KB
+    send2trash-1.8.2           |  py311hca03da5_0          34 KB
+    sip-6.7.12                 |  py311h313beb8_0         594 KB
+    sniffio-1.2.0              |  py311hca03da5_1          17 KB
+    soupsieve-2.5              |  py311hca03da5_0          96 KB
+    stack_data-0.2.0           |     pyhd3eb1b0_0          22 KB
+    terminado-0.17.1           |  py311hca03da5_0          38 KB
+    tinycss2-1.2.1             |  py311hca03da5_0          48 KB
+    tornado-6.3.3              |  py311h80987f9_0         853 KB
+    traitlets-5.7.1            |  py311hca03da5_0         260 KB
+    typing-extensions-4.7.1    |  py311hca03da5_0          10 KB
+    typing_extensions-4.7.1    |  py311hca03da5_0          74 KB
+    wcwidth-0.2.5              |     pyhd3eb1b0_0          26 KB
+    webencodings-0.5.1         |  py311hca03da5_1          25 KB
+    websocket-client-0.58.0    |  py311hca03da5_4          86 KB
+    widgetsnbextension-4.0.5   |  py311hca03da5_0         877 KB
+    yaml-0.2.5                 |       h1a28f6b_0          71 KB
+    zeromq-4.3.4               |       hc377ac9_0         274 KB
+    ------------------------------------------------------------
+                                           Total:       175.1 MB
+
+The following NEW packages will be INSTALLED:
+
+  anyio              pkgs/main/osx-arm64::anyio-3.5.0-py311hca03da5_0 
+  appnope            pkgs/main/osx-arm64::appnope-0.1.2-py311hca03da5_1001 
+  argon2-cffi        pkgs/main/noarch::argon2-cffi-21.3.0-pyhd3eb1b0_0 
+  argon2-cffi-bindi~ pkgs/main/osx-arm64::argon2-cffi-bindings-21.2.0-py311h80987f9_0 
+  asttokens          pkgs/main/noarch::asttokens-2.0.5-pyhd3eb1b0_0 
+  async-lru          pkgs/main/osx-arm64::async-lru-2.0.4-py311hca03da5_0 
+  attrs              pkgs/main/osx-arm64::attrs-23.1.0-py311hca03da5_0 
+  babel              pkgs/main/osx-arm64::babel-2.11.0-py311hca03da5_0 
+  backcall           pkgs/main/noarch::backcall-0.2.0-pyhd3eb1b0_0 
+  beautifulsoup4     pkgs/main/osx-arm64::beautifulsoup4-4.12.2-py311hca03da5_0 
+  bleach             pkgs/main/noarch::bleach-4.1.0-pyhd3eb1b0_0 
+  comm               pkgs/main/osx-arm64::comm-0.1.2-py311hca03da5_0 
+  cyrus-sasl         pkgs/main/osx-arm64::cyrus-sasl-2.1.28-h9131b1a_1 
+  debugpy            pkgs/main/osx-arm64::debugpy-1.6.7-py311h313beb8_0 
+  decorator          pkgs/main/noarch::decorator-5.1.1-pyhd3eb1b0_0 
+  defusedxml         pkgs/main/noarch::defusedxml-0.7.1-pyhd3eb1b0_0 
+  executing          pkgs/main/noarch::executing-0.8.3-pyhd3eb1b0_0 
+  gettext            pkgs/main/osx-arm64::gettext-0.21.0-h13f89a0_1 
+  glib               pkgs/main/osx-arm64::glib-2.69.1-h514c7bf_2 
+  gst-plugins-base   pkgs/main/osx-arm64::gst-plugins-base-1.14.1-h313beb8_1 
+  gstreamer          pkgs/main/osx-arm64::gstreamer-1.14.1-h80987f9_1 
+  ipykernel          pkgs/main/osx-arm64::ipykernel-6.25.0-py311hb6e6a13_0 
+  ipython            pkgs/main/osx-arm64::ipython-8.15.0-py311hca03da5_0 
+  ipywidgets         pkgs/main/osx-arm64::ipywidgets-8.0.4-py311hca03da5_0 
+  jedi               pkgs/main/osx-arm64::jedi-0.18.1-py311hca03da5_1 
+  jinja2             pkgs/main/osx-arm64::jinja2-3.1.2-py311hca03da5_0 
+  jpeg               pkgs/main/osx-arm64::jpeg-9e-h80987f9_1 
+  json5              pkgs/main/noarch::json5-0.9.6-pyhd3eb1b0_0 
+  jsonschema         pkgs/main/osx-arm64::jsonschema-4.19.2-py311hca03da5_0 
+  jsonschema-specif~ pkgs/main/osx-arm64::jsonschema-specifications-2023.7.1-py311hca03da5_0 
+  jupyter            pkgs/main/osx-arm64::jupyter-1.0.0-py311hca03da5_8 
+  jupyter-lsp        pkgs/main/osx-arm64::jupyter-lsp-2.2.0-py311hca03da5_0 
+  jupyter_client     pkgs/main/osx-arm64::jupyter_client-8.6.0-py311hca03da5_0 
+  jupyter_console    pkgs/main/osx-arm64::jupyter_console-6.6.3-py311hca03da5_0 
+  jupyter_core       pkgs/main/osx-arm64::jupyter_core-5.5.0-py311hca03da5_0 
+  jupyter_events     pkgs/main/osx-arm64::jupyter_events-0.8.0-py311hca03da5_0 
+  jupyter_server     pkgs/main/osx-arm64::jupyter_server-2.10.0-py311hca03da5_0 
+  jupyter_server_te~ pkgs/main/osx-arm64::jupyter_server_terminals-0.4.4-py311hca03da5_1 
+  jupyterlab         pkgs/main/osx-arm64::jupyterlab-4.0.8-py311hca03da5_0 
+  jupyterlab_pygmen~ pkgs/main/noarch::jupyterlab_pygments-0.1.2-py_0 
+  jupyterlab_server  pkgs/main/osx-arm64::jupyterlab_server-2.25.1-py311hca03da5_0 
+  jupyterlab_widgets pkgs/main/osx-arm64::jupyterlab_widgets-3.0.9-py311hca03da5_0 
+  libclang           pkgs/main/osx-arm64::libclang-14.0.6-default_h1b80db6_1 
+  libclang13         pkgs/main/osx-arm64::libclang13-14.0.6-default_h24352ff_1 
+  libllvm14          pkgs/main/osx-arm64::libllvm14-14.0.6-h7ec7a93_3 
+  libpng             pkgs/main/osx-arm64::libpng-1.6.39-h80987f9_0 
+  libpq              pkgs/main/osx-arm64::libpq-12.15-h02f6b3c_1 
+  libsodium          pkgs/main/osx-arm64::libsodium-1.0.18-h1a28f6b_0 
+  llvm-openmp        pkgs/main/osx-arm64::llvm-openmp-14.0.6-hc6e5704_0 
+  markupsafe         pkgs/main/osx-arm64::markupsafe-2.1.1-py311h80987f9_0 
+  matplotlib-inline  pkgs/main/osx-arm64::matplotlib-inline-0.1.6-py311hca03da5_0 
+  mistune            pkgs/main/osx-arm64::mistune-2.0.4-py311hca03da5_0 
+  mysql              pkgs/main/osx-arm64::mysql-5.7.24-ha71a6ea_2 
+  nbclient           pkgs/main/osx-arm64::nbclient-0.8.0-py311hca03da5_0 
+  nbconvert          pkgs/main/osx-arm64::nbconvert-7.10.0-py311hca03da5_0 
+  nbformat           pkgs/main/osx-arm64::nbformat-5.9.2-py311hca03da5_0 
+  nest-asyncio       pkgs/main/osx-arm64::nest-asyncio-1.5.6-py311hca03da5_0 
+  notebook           pkgs/main/osx-arm64::notebook-7.0.6-py311hca03da5_0 
+  notebook-shim      pkgs/main/osx-arm64::notebook-shim-0.2.3-py311hca03da5_0 
+  overrides          pkgs/main/osx-arm64::overrides-7.4.0-py311hca03da5_0 
+  pandocfilters      pkgs/main/noarch::pandocfilters-1.5.0-pyhd3eb1b0_0 
+  parso              pkgs/main/noarch::parso-0.8.3-pyhd3eb1b0_0 
+  pcre               pkgs/main/osx-arm64::pcre-8.45-hc377ac9_0 
+  pexpect            pkgs/main/noarch::pexpect-4.8.0-pyhd3eb1b0_3 
+  pickleshare        pkgs/main/noarch::pickleshare-0.7.5-pyhd3eb1b0_1003 
+  platformdirs       pkgs/main/osx-arm64::platformdirs-3.10.0-py311hca03da5_0 
+  ply                pkgs/main/osx-arm64::ply-3.11-py311hca03da5_0 
+  prometheus_client  pkgs/main/osx-arm64::prometheus_client-0.14.1-py311hca03da5_0 
+  prompt-toolkit     pkgs/main/osx-arm64::prompt-toolkit-3.0.36-py311hca03da5_0 
+  prompt_toolkit     pkgs/main/noarch::prompt_toolkit-3.0.36-hd3eb1b0_0 
+  psutil             pkgs/main/osx-arm64::psutil-5.9.0-py311h80987f9_0 
+  ptyprocess         pkgs/main/noarch::ptyprocess-0.7.0-pyhd3eb1b0_2 
+  pure_eval          pkgs/main/noarch::pure_eval-0.2.2-pyhd3eb1b0_0 
+  pygments           pkgs/main/osx-arm64::pygments-2.15.1-py311hca03da5_1 
+  pyqt               pkgs/main/osx-arm64::pyqt-5.15.10-py311h313beb8_0 
+  pyqt5-sip          pkgs/main/osx-arm64::pyqt5-sip-12.13.0-py311h80987f9_0 
+  python-dateutil    pkgs/main/noarch::python-dateutil-2.8.2-pyhd3eb1b0_0 
+  python-fastjsonsc~ pkgs/main/osx-arm64::python-fastjsonschema-2.16.2-py311hca03da5_0 
+  python-json-logger pkgs/main/osx-arm64::python-json-logger-2.0.7-py311hca03da5_0 
+  pytz               pkgs/main/osx-arm64::pytz-2023.3.post1-py311hca03da5_0 
+  pyyaml             pkgs/main/osx-arm64::pyyaml-6.0.1-py311h80987f9_0 
+  pyzmq              pkgs/main/osx-arm64::pyzmq-25.1.0-py311h313beb8_0 
+  qt-main            pkgs/main/osx-arm64::qt-main-5.15.2-h0917680_10 
+  qtconsole          pkgs/main/osx-arm64::qtconsole-5.5.0-py311hca03da5_0 
+  qtpy               pkgs/main/osx-arm64::qtpy-2.4.1-py311hca03da5_0 
+  referencing        pkgs/main/osx-arm64::referencing-0.30.2-py311hca03da5_0 
+  rfc3339-validator  pkgs/main/osx-arm64::rfc3339-validator-0.1.4-py311hca03da5_0 
+  rfc3986-validator  pkgs/main/osx-arm64::rfc3986-validator-0.1.1-py311hca03da5_0 
+  rpds-py            pkgs/main/osx-arm64::rpds-py-0.10.6-py311hf0e4da2_0 
+  send2trash         pkgs/main/osx-arm64::send2trash-1.8.2-py311hca03da5_0 
+  sip                pkgs/main/osx-arm64::sip-6.7.12-py311h313beb8_0 
+  six                pkgs/main/noarch::six-1.16.0-pyhd3eb1b0_1 
+  sniffio            pkgs/main/osx-arm64::sniffio-1.2.0-py311hca03da5_1 
+  soupsieve          pkgs/main/osx-arm64::soupsieve-2.5-py311hca03da5_0 
+  stack_data         pkgs/main/noarch::stack_data-0.2.0-pyhd3eb1b0_0 
+  terminado          pkgs/main/osx-arm64::terminado-0.17.1-py311hca03da5_0 
+  tinycss2           pkgs/main/osx-arm64::tinycss2-1.2.1-py311hca03da5_0 
+  tornado            pkgs/main/osx-arm64::tornado-6.3.3-py311h80987f9_0 
+  traitlets          pkgs/main/osx-arm64::traitlets-5.7.1-py311hca03da5_0 
+  typing-extensions  pkgs/main/osx-arm64::typing-extensions-4.7.1-py311hca03da5_0 
+  typing_extensions  pkgs/main/osx-arm64::typing_extensions-4.7.1-py311hca03da5_0 
+  wcwidth            pkgs/main/noarch::wcwidth-0.2.5-pyhd3eb1b0_0 
+  webencodings       pkgs/main/osx-arm64::webencodings-0.5.1-py311hca03da5_1 
+  websocket-client   pkgs/main/osx-arm64::websocket-client-0.58.0-py311hca03da5_4 
+  widgetsnbextension pkgs/main/osx-arm64::widgetsnbextension-4.0.5-py311hca03da5_0 
+  yaml               pkgs/main/osx-arm64::yaml-0.2.5-h1a28f6b_0 
+  zeromq             pkgs/main/osx-arm64::zeromq-4.3.4-hc377ac9_0 
+
+The following packages will be UPDATED:
+
+  certifi                         2023.7.22-py311hca03da5_0 --> 2023.11.17-py311hca03da5_0 
+
+
+Proceed ([y]/n)? y
+
+
+Downloading and Extracting Packages:
+                                                                                                                                         
+Preparing transaction: done                                                                                                              
+Verifying transaction: done                                                                                                              
+Executing transaction: done                                                                                                              
+(base) yuvrajpradhan@Yuvrajs-MacBook-Air sample_project % jupyter notebook
+[I 2023-12-03 14:04:48.645 ServerApp] Package notebook took 0.0000s to import
+[I 2023-12-03 14:04:48.657 ServerApp] Package jupyter_lsp took 0.0117s to import
+[W 2023-12-03 14:04:48.657 ServerApp] A `_jupyter_server_extension_points` function was not found in jupyter_lsp. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
+[I 2023-12-03 14:04:48.663 ServerApp] Package jupyter_server_terminals took 0.0057s to import
+[I 2023-12-03 14:04:48.663 ServerApp] Package jupyterlab took 0.0000s to import
+[I 2023-12-03 14:04:48.687 ServerApp] Package notebook_shim took 0.0000s to import
+[W 2023-12-03 14:04:48.687 ServerApp] A `_jupyter_server_extension_points` function was not found in notebook_shim. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
+[I 2023-12-03 14:04:48.687 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2023-12-03 14:04:48.689 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[I 2023-12-03 14:04:48.692 ServerApp] jupyterlab | extension was successfully linked.
+[I 2023-12-03 14:04:48.693 ServerApp] notebook | extension was successfully linked.
+[I 2023-12-03 14:04:48.696 ServerApp] Writing Jupyter server cookie secret to /Users/yuvrajpradhan/Library/Jupyter/runtime/jupyter_cookie_secret
+[I 2023-12-03 14:04:48.923 ServerApp] notebook_shim | extension was successfully linked.
+[I 2023-12-03 14:04:48.951 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2023-12-03 14:04:48.953 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2023-12-03 14:04:48.954 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2023-12-03 14:04:48.956 LabApp] JupyterLab extension loaded from /Users/yuvrajpradhan/miniconda3/lib/python3.11/site-packages/jupyterlab
+[I 2023-12-03 14:04:48.956 LabApp] JupyterLab application directory is /Users/yuvrajpradhan/miniconda3/share/jupyter/lab
+[I 2023-12-03 14:04:48.956 LabApp] Extension Manager is 'pypi'.
+[I 2023-12-03 14:04:48.958 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2023-12-03 14:04:48.959 ServerApp] notebook | extension was successfully loaded.
+[I 2023-12-03 14:04:48.960 ServerApp] Serving notebooks from local directory: /Users/yuvrajpradhan/Desktop/sample_project
+[I 2023-12-03 14:04:48.960 ServerApp] Jupyter Server 2.10.0 is running at:
+[I 2023-12-03 14:04:48.960 ServerApp] http://localhost:8888/tree?token=9265a9a83ee73e03759b0ad9e94cd0903f954c236402bb3e
+[I 2023-12-03 14:04:48.960 ServerApp]     http://127.0.0.1:8888/tree?token=9265a9a83ee73e03759b0ad9e94cd0903f954c236402bb3e
+[I 2023-12-03 14:04:48.960 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 2023-12-03 14:04:48.964 ServerApp] 
+    
+    To access the server, open this file in a browser:
+        file:///Users/yuvrajpradhan/Library/Jupyter/runtime/jpserver-4384-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8888/tree?token=9265a9a83ee73e03759b0ad9e94cd0903f954c236402bb3e
+        http://127.0.0.1:8888/tree?token=9265a9a83ee73e03759b0ad9e94cd0903f954c236402bb3e
+[I 2023-12-03 14:04:48.977 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+0.00s - Debugger warning: It seems that frozen modules are being used, which may
+0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+0.00s - to python to disable frozen modules.
+0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+[I 2023-12-03 14:05:20.994 ServerApp] Creating new notebook in /env
+[I 2023-12-03 14:05:21.044 ServerApp] Writing notebook-signing key to /Users/yuvrajpradhan/Library/Jupyter/notebook_secret
+[W 2023-12-03 14:05:32.910 ServerApp] delete /env/Untitled.ipynb
+[I 2023-12-03 14:06:15.165 ServerApp] Creating new notebook in /env
+[I 2023-12-03 14:06:27.589 ServerApp] Kernel started: fd1b26c3-4a48-491e-a3c7-2160198169f0
+0.00s - Debugger warning: It seems that frozen modules are being used, which may
+0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+0.00s - to python to disable frozen modules.
+0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+[I 2023-12-03 14:06:28.302 ServerApp] Connecting to kernel fd1b26c3-4a48-491e-a3c7-2160198169f0.
+[I 2023-12-03 14:08:21.281 ServerApp] Saving file at /env/1.ipynb
+[I 2023-12-03 14:10:21.299 ServerApp] Saving file at /env/1.ipynb
+[I 2023-12-03 14:12:21.316 ServerApp] Saving file at /env/1.ipynb
+[I 2023-12-03 14:13:40.530 ServerApp] Starting buffering for fd1b26c3-4a48-491e-a3c7-2160198169f0:b1bfe33c-41ef-40f6-a525-60013591e3ca
+[W 2023-12-03 14:13:44.093 ServerApp] delete /env/Untitled.ipynb
+[W 2023-12-03 14:13:44.093 ServerApp] 404 DELETE /api/contents/env/Untitled.ipynb?1701593024090 (::1): File or directory does not exist: /Users/yuvrajpradhan/Desktop/sample_project/env/Untitled.ipynb
+[W 2023-12-03 14:13:44.093 ServerApp] wrote error: 'File or directory does not exist: /Users/yuvrajpradhan/Desktop/sample_project/env/Untitled.ipynb'
+    Traceback (most recent call last):
+      File "/Users/yuvrajpradhan/miniconda3/lib/python3.11/site-packages/tornado/web.py", line 1786, in _execute
+        result = await result
+                 ^^^^^^^^^^^^
+      File "/Users/yuvrajpradhan/miniconda3/lib/python3.11/site-packages/jupyter_server/services/contents/handlers.py", line 282, in delete
+        await ensure_async(cm.delete(path))
+      File "/Users/yuvrajpradhan/miniconda3/lib/python3.11/site-packages/jupyter_core/utils/__init__.py", line 189, in ensure_async
+        result = await obj
+                 ^^^^^^^^^
+      File "/Users/yuvrajpradhan/miniconda3/lib/python3.11/site-packages/jupyter_server/services/contents/manager.py", line 883, in delete
+        await self.delete_file(path)
+      File "/Users/yuvrajpradhan/miniconda3/lib/python3.11/site-packages/jupyter_server/services/contents/filemanager.py", line 954, in delete_file
+        raise web.HTTPError(404, "File or directory does not exist: %s" % os_path)
+    tornado.web.HTTPError: HTTP 404: Not Found (File or directory does not exist: /Users/yuvrajpradhan/Desktop/sample_project/env/Untitled.ipynb)
+[W 2023-12-03 14:13:44.096 ServerApp] 404 DELETE /api/contents/env/Untitled.ipynb?1701593024090 (258c2a6e5d1e4151a6a373e7444fd38f@::1) 4.54ms referer=http://localhost:8888/tree/env
+[I 2023-12-03 14:13:50.890 ServerApp] Kernel shutdown: fd1b26c3-4a48-491e-a3c7-2160198169f0
+[W 2023-12-03 14:13:51.125 ServerApp] delete /env/1.ipynb
+^C[I 2023-12-03 14:14:49.552 ServerApp] interrupted
+[I 2023-12-03 14:14:49.553 ServerApp] Serving notebooks from local directory: /Users/yuvrajpradhan/Desktop/sample_project
+    0 active kernels
+    Jupyter Server 2.10.0 is running at:
+    http://localhost:8888/tree?token=9265a9a83ee73e03759b0ad9e94cd0903f954c236402bb3e
+        http://127.0.0.1:8888/tree?token=9265a9a83ee73e03759b0ad9e94cd0903f954c236402bb3e
+Shutdown this Jupyter server (y/[n])? [I 2023-12-03 14:14:54.558 ServerApp] No answer for 5s:
+[I 2023-12-03 14:14:54.558 ServerApp] resuming operation...
+y
+^C[I 2023-12-03 14:15:18.158 ServerApp] interrupted
+[I 2023-12-03 14:15:18.159 ServerApp] Serving notebooks from local directory: /Users/yuvrajpradhan/Desktop/sample_project
+    0 active kernels
+    Jupyter Server 2.10.0 is running at:
+    http://localhost:8888/tree?token=9265a9a83ee73e03759b0ad9e94cd0903f954c236402bb3e
+        http://127.0.0.1:8888/tree?token=9265a9a83ee73e03759b0ad9e94cd0903f954c236402bb3e
+Shutdown this Jupyter server (y/[n])? y
+[C 2023-12-03 14:15:22.374 ServerApp] Shutdown confirmed
+[I 2023-12-03 14:15:22.375 ServerApp] Shutting down 5 extensions
+(base) yuvrajpradhan@Yuvrajs-MacBook-Air sample_project % conda deactivate
+yuvrajpradhan@Yuvrajs-MacBook-Air sample_project % jupyter notebook
+zsh: command not found: jupyter
+yuvrajpradhan@Yuvrajs-MacBook-Air sample_project % conda activate
+(base) yuvrajpradhan@Yuvrajs-MacBook-Air sample_project % jupyter notebook
+[I 2023-12-03 14:17:01.404 ServerApp] Package notebook took 0.0000s to import
+[I 2023-12-03 14:17:01.418 ServerApp] Package jupyter_lsp took 0.0135s to import
+[W 2023-12-03 14:17:01.418 ServerApp] A `_jupyter_server_extension_points` function was not found in jupyter_lsp. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
+[I 2023-12-03 14:17:01.425 ServerApp] Package jupyter_server_terminals took 0.0066s to import
+[I 2023-12-03 14:17:01.425 ServerApp] Package jupyterlab took 0.0000s to import
+[I 2023-12-03 14:17:01.451 ServerApp] Package notebook_shim took 0.0000s to import
+[W 2023-12-03 14:17:01.451 ServerApp] A `_jupyter_server_extension_points` function was not found in notebook_shim. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
+[I 2023-12-03 14:17:01.451 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2023-12-03 14:17:01.454 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[I 2023-12-03 14:17:01.456 ServerApp] jupyterlab | extension was successfully linked.
+[I 2023-12-03 14:17:01.458 ServerApp] notebook | extension was successfully linked.
+[I 2023-12-03 14:17:01.654 ServerApp] notebook_shim | extension was successfully linked.
+[I 2023-12-03 14:17:01.679 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2023-12-03 14:17:01.681 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2023-12-03 14:17:01.681 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2023-12-03 14:17:01.684 LabApp] JupyterLab extension loaded from /Users/yuvrajpradhan/miniconda3/lib/python3.11/site-packages/jupyterlab
+[I 2023-12-03 14:17:01.684 LabApp] JupyterLab application directory is /Users/yuvrajpradhan/miniconda3/share/jupyter/lab
+[I 2023-12-03 14:17:01.684 LabApp] Extension Manager is 'pypi'.
+[I 2023-12-03 14:17:01.685 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2023-12-03 14:17:01.687 ServerApp] notebook | extension was successfully loaded.
+[I 2023-12-03 14:17:01.687 ServerApp] Serving notebooks from local directory: /Users/yuvrajpradhan/Desktop/sample_project
+[I 2023-12-03 14:17:01.688 ServerApp] Jupyter Server 2.10.0 is running at:
+[I 2023-12-03 14:17:01.688 ServerApp] http://localhost:8888/tree?token=60281c9dd4f19c7840a6450c7555e64d56b81079869a1ae5
+[I 2023-12-03 14:17:01.688 ServerApp]     http://127.0.0.1:8888/tree?token=60281c9dd4f19c7840a6450c7555e64d56b81079869a1ae5
+[I 2023-12-03 14:17:01.688 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 2023-12-03 14:17:01.692 ServerApp] 
+    
+    To access the server, open this file in a browser:
+        file:///Users/yuvrajpradhan/Library/Jupyter/runtime/jpserver-5426-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8888/tree?token=60281c9dd4f19c7840a6450c7555e64d56b81079869a1ae5
+        http://127.0.0.1:8888/tree?token=60281c9dd4f19c7840a6450c7555e64d56b81079869a1ae5
+[I 2023-12-03 14:17:01.706 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+0.00s - Debugger warning: It seems that frozen modules are being used, which may
+0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+0.00s - to python to disable frozen modules.
+0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+^C[I 2023-12-03 14:17:14.669 ServerApp] interrupted
+[I 2023-12-03 14:17:14.669 ServerApp] Serving notebooks from local directory: /Users/yuvrajpradhan/Desktop/sample_project
+    0 active kernels
+    Jupyter Server 2.10.0 is running at:
+    http://localhost:8888/tree?token=60281c9dd4f19c7840a6450c7555e64d56b81079869a1ae5
+        http://127.0.0.1:8888/tree?token=60281c9dd4f19c7840a6450c7555e64d56b81079869a1ae5
+Shutdown this Jupyter server (y/[n])? y
+[C 2023-12-03 14:17:16.802 ServerApp] Shutdown confirmed
+[I 2023-12-03 14:17:16.803 ServerApp] Shutting down 5 extensions
+(base) yuvrajpradhan@Yuvrajs-MacBook-Air sample_project % conda deactivate
+yuvrajpradhan@Yuvrajs-MacBook-Air sample_project % 
